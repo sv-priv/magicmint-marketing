@@ -1,0 +1,145 @@
+.navigation{
+    padding-top: 25px;
+    font-family: Grtsk-Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+   text-transform: uppercase;
+    color: #313439;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+.mid-content{
+    padding-top: 10px;
+    text-align: center;
+}
+.right-content{
+    text-align: right;
+}
+.nav-item{
+    padding: 0px 17px 9px 0px;
+    padding-top: 10px;
+}
+.nav-button{
+    padding: 14px;
+    margin-bottom: -5px;
+    border: none;
+    border-radius: 30px;
+
+}
+.connect-wallet{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: static;
+    width: 140px;
+    height: 37px;
+    left: 132px;
+    text-transform: uppercase;
+    top: 0px;
+    border: none;
+    background: #F0F1F9;
+    border-radius: 6px;
+    font-family: Grtsk-Zetta;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+}
+.connect-wallet:hover{
+    background: #BAC2FF;
+}
+.profile{
+    padding: 10px 14px;
+    width: 36px;
+    height: 37px;
+    background: #D7FF66;
+    border-radius: 1000px;
+}
+.text-link {
+    color: inherit;
+    text-decoration: inherit;
+}
+.connect-wallet-button{
+    position: absolute;
+    width: 430px;
+    height: 80px;
+    left: 85px;
+    top: 215px;
+    color: white;
+    border: none;
+    background: #8794FF;
+    border-radius: 20px;
+}
+.nav-item-link{
+    font-size: 17px;
+}
+.connect-wallet-button2{
+    position: absolute;
+    width: 430px;
+    border: none;
+    height: 80px;
+    left: 85px;
+    top: 315px;
+    color: white;
+    background: #D7FF66;
+    border-radius: 20px;
+}
+.nav-title{
+    font-size: 24px;
+    padding-top: 20px;
+}
+.nav-title:hover{
+    font-size: 24px;
+    color: black
+}
+.connect-wallet-title{
+    font-family:;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 100%;    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    left: 24%;
+    right: 24.33%;
+    margin-top: -135px;
+    top: 16.96%;
+    bottom: 67.12%;
+    color: #313439;
+
+}
+.connect-wallet-desc{
+    font-family: Whyte;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    position: absolute;
+    left: 23%;
+    right: 24.33%;
+    top: 18.96%;
+    bottom: 67.12%;
+    text-align: center;
+    color: #313439;
+}
+.button-close{
+    float: right;
+    background-color: white;
+    border: none;
+}
+.launch-app{
+    border-radius: 50px;
+    text-align: center;
+}
