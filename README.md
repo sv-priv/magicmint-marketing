@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+#MAGIC MINT
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+##Why lazy minting?
 
-In the project directory, you can run:
+  The act of minting an NFT in essence is writing some data on the blockchain which requires a fee to the network for providing computational power and storage for your data.
+  The fees these days with the high network usage and the scaling solutions being a “a work in progress” can be substantial.
 
-### `yarn start`
+  This can be a discouraging fact for the creators who may get second thoughts about creating NFTs who may not sell eventually and investing a bunch of money for something uncertain.
+  This brings up the questions, why and how to create an item without paying for the network fee at the time of the mint.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+  This problem is solved by introducing lazy minting that provides a way for a creator to create the NFT without paying for the transaction execution. The transaction is being executed at the moment when another user decides to buy or claim the NFT.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+  Creating an NFT  !==  Minting / Claiming
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+##Lazy minting throughout the ecosystem
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  Lazy minting is already adopted by a few of the most popular marketplaces as the default way to create an NFT. 
+  It is a powerful concept that shapes the creators economy with a lot of unexploited use cases.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##How does it work?
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  The key feature with lazy minting is that instead of directly calling a mint function that executes a transaction on chain and saves your data( as it is for minting) , the creator provides a signature with his address private key. 
+  The signature is stored off-chain alongside other NFT metadata and proves that the token which is yet to be minted is authorized and legitimate.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  If the signature belongs to an address that is previously authorized to create an NFT, the actual minter / buyer / claimer is allowed to execute the transaction and put the data on chain, making him the owner of the freshly lazy-minted NFT.
 
-## Learn More
+##Lazy minting on Rarible Protocol
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  Rarible Protocol provides easy tooling and a few features to support lazy-minting that make your life a lot easier.
 
-### Code Splitting
+  Best way to get around it is by using the rarible-starter-app built on top of Austin Griffits well known ethereum development kit Scaffold-Eth.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  All you need to do is fork the Scaffold-Eth template and switch to the rarible-starter-app branch.
 
-### Analyzing the Bundle Size
+  Following the instructions about package installation and setup in the Readme.md file, you will be able to see something like this.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+  Here, you can see all the major features that the protocol provides and you will be able to test them on how they actually work. 
 
-### Making a Progressive Web App
+  The 3 main things that we are focusing on in terms of the lazy minting app are: 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  “IPFS upload”
+  “Lazy Mint”
+  “Rarible Item Indexer”
 
-### Advanced Configuration
+##Lazy minting to specific addresses
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+###Claiming an NFT.
 
-### Deployment
+  Lazy minting is cool. We got that out of the way. But what if you wanted to lazy mint an item that will be restricted for minting to anyone? 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+##Use cases:
+  You are an artist that wants to create an NFT and send it to your friend without paying the gas fee. This nft is really exclusive and you want your friend to be the only one with the ability to mint it.
+  You are a DAO that wants to send its most active members a special NFT that they can vote with in the DAO decision making processes. These NFTs are defining the voting power of the DAO member therefore they will have to be unique for every DAO member. DAO lead mints all these special tokens on the app and the DAO members can use the app to mint / claim them. 
 
-### `yarn build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+
+
+
+
